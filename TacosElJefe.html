@@ -1,0 +1,181 @@
+ <!DOCTYPE html>
+ <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tacos El Jefe</title>
+        <style>
+            h1, h2{
+                text-align: center;
+            }
+            .logo{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Bienvenido a Tacos "El Jefe"</h1>
+        </header>
+
+        <section class="logo">
+            <div>
+                <img src="img/Logo Tacos El Jefe.jpg" alt="Logo tacos el jefe">
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Menú</h2>
+            <h3>Tacos perrillos</h3>
+            <ul>
+                <li>Adobada .................... $20</li>
+                <li>Suadero .................... $20</li>
+                <li>Pastor  .................... $20</li>
+                <li>Bistec  .................... $20</li>
+                <li>Chorizo .................... $20</li>
+            </ul>
+
+            <h3>Tacos perrones</h3>
+            <ul>
+                <li>Adobada .................... $30</li>
+                <li>Suadero .................... $30</li>
+                <li>Pastor  .................... $30</li>
+                <li>Bistec  .................... $30</li>
+                <li>Chorizo .................... $30</li>
+            </ul>
+
+            <h3>Gringas</h3>
+            <dl>
+                <dt>Chihuahua .................... $40</dt>
+                <dd>Doble tortilla de harina con queso y un guiso</dd>
+                <dt>Labrador .................... $45</dt>
+                <dd>Doble tortilla de harina con queso y dos guisos</dd>
+                <dt>Pastor alemán .................... $50</dt>
+                <dd>Doble tortilla de harina con queso y tres guisos</dd>
+            </dl>
+
+            <h3>Bebidas</h3>
+            <ul>
+                <li>Refresco (600ml) .................... $20</li>
+                <li>Limonada (1L)    .................... $25</li>
+                <li>Jamaica  (1L)    .................... $25</li>
+                <li>Horchata (1L)    .................... $25</li>
+                <li>Cerveza  (600ml) .................... $45</li>
+            </ul>
+        </section>
+        
+        <hr>
+
+        <section>
+            <h2>Ubicación</h2>
+            <h3>Sucursales</h3>
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Ubicación</th>
+                    <th>Horarios</th>
+                </tr>
+                <tr>
+                    <td>Centro</td>
+                    <td><a href="#" target="_blank">Direccion</a></td>
+                    <td>Lunes a domingo / 12p.m. - 2a.m.</td>
+                </tr>
+                <tr>
+                    <td>Norte</td>
+                    <td><a href="#" target="_blank">Direccion</a></td>
+                    <td>Lunes a domingo / 12p.m. - 2a.m.</td>
+                </tr>
+                <tr>
+                    <td>Sur</td>
+                    <td><a href="#" target="_blank">Direccion</a></td>
+                    <td>Lunes a domingo / 12p.m. - 2a.m.</td>
+                </tr>
+            </table>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Pedidos</h2>
+            <form action="">
+                <p>Datos de contacto</p>
+                <label for="Nombre"></label>
+                <input type="text" id="Nombre" name="Nombre" placeholder="Nombre">
+                <br>
+                <label for="Teléfono"></label>
+                <input type="text" id="Teléfono" name="Teléfono" placeholder="Teléfono">
+                <br>
+                <label for="Direccion"></label>
+                <input type="text" id="Direccion" name="Direccion" placeholder="Direccion">
+                <br>
+                
+                <p>¿De qué sucursal quieres pedir?</p>
+                <select name="" id="">
+                    <option value="Centro">Centro</option>
+                    <option value="Norte">Norte</option>
+                    <option value="Sur">Sur</option>
+                </select>
+
+                <p>¿Cuál sería tu orden? (Selecciona las casillas con los guisos que gustes e indica cuantos tacos perrillos y/o perrones quieres de cada guiso)</p>
+                <input type="checkbox" id="Adobada" name="Adobada" value="Adobada">
+                <label for="Adobada">Adobada</label>
+                <input type="number" id="AdobadaPerrillo" name="AdobadaPerrillo" placeholder="Tacos perrillos" min="0">
+                <input type="number" id="AdobadaPerron" name="AdobadaPerron" placeholder="Tacos perrones" min="0">
+                <br>
+                <input type="checkbox" id="Suadero" name="Suadero" value="Suadero">
+                <label for="Suadero">Suadero</label>
+                <input type="number" id="SuaderoPerrillo" name="SuaderoPerrillo" placeholder="Tacos perrillos" min="0">
+                <input type="number" id="SuaderoPerron" name="SuaderoPerron" placeholder="Tacos perrones" min="0">
+                <br>
+                <input type="checkbox" id="Pastor" name="Pastor" value="Pastor">
+                <label for="Pastor">Pastor</label>
+                <input type="number" id="PastorPerrillo" name="PastorPerrillo" placeholder="Tacos perrillos" min="0">
+                <input type="number" id="PastorPerron" name="PastorPerron" placeholder="Tacos perrones" min="0">
+                <br>
+                <input type="checkbox" id="Bistec" name="Bistec" value="Bistec">
+                <label for="Bistec">Bistec</label>
+                <input type="number" id="BistecPerrillo" name="BistecPerrillo" placeholder="Tacos perrillos" min="0">
+                <input type="number" id="BistecPerron" name="BistecPerron" placeholder="Tacos perrones" min="0">
+                <br>
+                <input type="checkbox" id="Chorizo" name="Chorizo" value="Chorizo">
+                <label for="Chorizo">Chorizo</label>
+                <input type="number" id="ChorizoPerrillo" name="ChorizoPerrillo" placeholder="Tacos perrillos" min="0">
+                <input type="number" id="ChorizoPerron" name="ChorizoPerron" placeholder="Tacos perrones" min="0">
+
+
+                <p>Selecciona tu bebida</p>
+                <input type="checkbox" id="Refresco" name="Refresco" value="Refresco">
+                <label for="Refresco">Refresco</label>
+                <input type="number" id="RefrescoNum" name="RefrescoNum" placeholder="¿Cuántos?" min="0">
+                <br>
+                <input type="checkbox" id="Limonada" name="Limonada" value="Limonada">
+                <label for="Limonada">Limonada</label>
+                <input type="number" id="LimonadaNum" name="LimonadaNum" placeholder="¿Cuántas?" min="0">
+                <br>
+                <input type="checkbox" id="Jamaica" name="Jamaica" value="Jamaica">
+                <label for="Jamaica">Jamaica</label>
+                <input type="number" id="JamaicaNum" name="JamaicaNum" placeholder="¿Cuántas?" min="0">
+                <br>
+                <input type="checkbox" id="Horchata" name="Horchata" value="Horchata">
+                <label for="Horchata">Horchata</label>
+                <input type="number" id="HorchataNum" name="HorchataNum" placeholder="¿Cuántas?" min="0">
+                <br>
+                <input type="checkbox" id="Cerveza" name="Cerveza" value="Cerveza">
+                <label for="Cerveza">Cerveza</label>
+                <input type="number" id="CervezaNum" name="CervezaNum" placeholder="¿Cuántas?" min="0">
+                <br>
+
+                <br><br>
+                <button type="submit">Enviar pedido</button> 
+                <br><br>
+
+            </form>
+        </section>
+        
+    </body>
+ </html>
